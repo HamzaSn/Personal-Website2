@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hamza Snoussi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/images.jfif" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css2/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../../css2/animate.css">
+
+    <link rel="stylesheet" href="../../css2/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../css2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../css2/magnific-popup.css">
+
+    <link rel="stylesheet" href="../../css2/aos.css">
+
+    <link rel="stylesheet" href="../../css2/ionicons.min.css">
+
+    <link rel="stylesheet" href="../../css2/flaticon.css">
+    <link rel="stylesheet" href="../../css2/icomoon.css">
+    <link rel="stylesheet" href="../../css2/style.css">
+</head>
+
+<body style="background-color:white;">
+
+
+    
+    <h2 class="display-3 text-center" style="color: black; padding-top: 200px;"> World Trend Analysis </h1>
+    <h2 class="text-muted text-center"> Udemy course project : R Programming </h2>
+        
+        <div class="col">
+            <button style="position: fixed; " class="btn btn-success " id="playButton">Play</button> <br> <br>
+            <button style="position: fixed; " class="btn btn-danger" id="stopButton">Stop</button> 
+            
+        </div>
+  
+
+        <div class="text-center">
+
+            <img style="padding-top: 200px;" class="center-block img-fluid" src="../../../../images/projet1/1.PNG" alt="">
+            <br>
+            <section id="second">
+                <br>
+                <img class="center-block img-fluid" src="../../images/projet1/2.PNG" alt="">
+            </section>
+
+            <section id="third">
+                <img class="center-block img-fluid" src="../../images/projet1/3.PNG" alt="">
+            </section> <br>
+
+            <section id="fourth">
+                <img class="center-block img-fluid" src="../../images/projet1/4.PNG" alt="">
+            </section> <br>
+
+            <section id="fifth">
+                <img class="center-block img-fluid" src="../../images/projet1/5.PNG" alt="">
+            </section> <br>
+
+            <section id="sixth">
+                <img class="center-block img-fluid" src="../../images/projet1/6.PNG" alt="">
+            </section> <br>
+
+            <section id="seventh">
+                <img class="center-block img-fluid" src="../../images/projet1/7.PNG" alt="">
+            </section> <br>
+
+            <section id="eight">
+                <img class="center-block img-fluid" src="../../images/projet1/8.PNG" alt="">
+            </section> <br>
+
+            <section id="nine">
+                <img class="center-block img-fluid" src="../../images/projet1/9.PNG" alt="">
+            </section> <br>
+
+            <section id="ten">
+                <img class="center-block img-fluid" src="../../images/projet1/10.PNG" alt="">
+            </section> <br>
+            <section id="eleven">
+                <img class="center-block img-fluid" src="../../images/projet1/11.PNG" alt="">
+            </section> <br>
+            <section id="twelve">
+                <img class="center-block img-fluid" src="../../images/projet1/12.PNG" alt="">
+            </section> <br>
+            <section id="thirteen">
+                <img class="center-block img-fluid" src="../../images/projet1/13.PNG" alt="">
+            </section> <br>
+            <section id="fourteen">
+                <img class="center-block img-fluid" src="../../images/projet1/14.PNG" alt="">
+            </section> <br>
+            <section id="fifteen">
+                <img class="center-block img-fluid" src="../../images/projet1/15.PNG" alt="">
+            </section> <br>
+            <section id="sixteen">
+                <img class="center-block img-fluid" src="../../images/projet1/16.PNG" alt="">
+            </section> <br>
+            <section id="seventeen">
+                <img class="center-block img-fluid" src="../../images/projet1/17.PNG" alt="">
+            </section> <br>
+            <section id="eighteen">
+                <img class="center-block img-fluid" src="../../images/projet1/18.PNG" alt="">
+            </section> <br>
+            <section id="nineteen">
+                <img class="center-block img-fluid" src="../../images/projet1/19.PNG" alt="">
+            </section> <br>
+            <section id="twenty">
+                <img class="center-block img-fluid" src="../../images/projet1/20.PNG" alt="">
+            </section> <br>
+            <section id="twentyOne">
+                <img class="center-block img-fluid" src="../../images/projet1/21.PNG" alt="">
+            </section> <br>
+            <section id="twentyTwo">
+                <img class="center-block img-fluid" src="../../images/projet1/22.PNG" alt="">
+            </section> <br>
+
+        </div>
+
+
+
+        <script>
+            function toggleHide() {
+  var x = document.getElementById("playButton");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+            var y = 550;
+            const btn = document.getElementById('playButton');
+            var status = "disabled";
+            btn.addEventListener("click", async function (event) {
+                toggleHide();
+                status = "enabled";
+                var i = 1;
+                while(status == "enabled" && i < 24){
+                    if( i == 18 ){
+                        window.scroll({
+                    top: y+200,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+                y+= 50;
+                    } else if( i >= 14 ){
+                        window.scroll({
+                    top: y+100,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+                y+= 50;
+                    } else {
+                        window.scroll({
+                    top: y,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+                    }
+                 
+                y += 700;
+                i++;
+                await new Promise(r => setTimeout(r, 5000));
+                }
+            });
+
+            const stopBtn = document.getElementById('stopButton');
+            stopBtn.addEventListener("click" , (event) => {
+                this.status = "disabled";
+                toggleHide();
+            })
+
+
+        </script>
+</body>
+
+</html>
